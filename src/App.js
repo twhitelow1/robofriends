@@ -8,9 +8,13 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      robots: robots,
+      robots: [],
       searchfield: ''
     }
+  }
+
+  componentDidMount() {
+    this.setState({ robots: robots })
   }
 
   onSearchChange = (event) => {
@@ -29,6 +33,7 @@ class App extends Component {
       </div>
     );
   }
+
 }
 
 export default App;
