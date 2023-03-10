@@ -8,15 +8,11 @@ import ErrorBoundry from '../components/ErrorBoundary';
 function App() {
   const [robots, setRobots] = useState([])
   const [searchfield, setSearchfield] = useState('')
-  // componentDidMount() {
-  //   fetch('https://jsonplaceholder.cypress.io/users')
-  //     .then(response => response.json())
-  //     .then(users => this.setState({ robots: users }))
-  // }
+
   useEffect(() => {
     fetch('https://jsonplaceholder.cypress.io/users')
       .then(response => response.json())
-      .then(users => { setRobots(users) })
+      .then(users => { setRobots(users) });
   }, [])
 
   const onSearchChange = (event) => {
