@@ -1,3 +1,8 @@
+# ROBOFRIENDS APP
+A fun robot search front end app made with react. 
+
+See a live deployment of it here : https://twhitelow1.github.io/robofriends/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
